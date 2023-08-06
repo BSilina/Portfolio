@@ -1,5 +1,5 @@
 :root {
-  --main-color: #b700ff;
+  --main-color: #7403c8;
   --second-color: #abb2bf;
   --third-color: ;
 }
@@ -10,7 +10,7 @@ body {
 
 p {
   font-family: "Poppins", sans-serif;
-  color: beige;
+  color: var(--second-color);
 }
 
 .my-name {
@@ -20,14 +20,71 @@ p {
 
 .second-heading {
   color: var(--main-color);
+  font-family: "Poppins", sans-serif;
 }
 
 .contact-button {
-  border-color: #b700ff;
-  border-radius: 6px;
+  font-family: "Roboto Mono", monospace;
+  background-color: transparent;
   color: beige;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid var(--main-color);
+  transition: border-radius 0.5s, background 1s, transform 0.5s;
+}
+.contact-button:hover {
+  color: var(--second-color);
+  background-color: var(--main-color);
+  cursor: pointer;
+  transform: scale(1.2);
+  border-radius: 25px;
 }
 
 .main-img {
-    width: 350px;
+  width: 350px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 980px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-img {
+    width: 308px;
+    padding-top: 62px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-img {
+    padding-top: 148px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-img {
+    width: 300px;
+    padding-top: 26px;
+  }
 }
