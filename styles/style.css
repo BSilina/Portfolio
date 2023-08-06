@@ -1,7 +1,33 @@
-h1 {
-    font-family: 'Roboto Mono', monospace;
+:root {
+  --main-color: #b700ff;
+  --second-color: #abb2bf;
+  --third-color: ;
+}
+
+body {
+  background-color: black !important;
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: beige;
+}
+
+.my-name {
+  font-family: "Roboto Mono", monospace;
+  color: beige;
+}
+
+.second-heading {
+  color: var(--main-color);
+}
+
+.contact-button {
+  border-color: #b700ff;
+  border-radius: 6px;
+  color: beige;
+}
+
+.main-img {
+    width: 350px;
 }
