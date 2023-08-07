@@ -1,7 +1,8 @@
 :root {
   --main-color: #7403c8;
   --second-color: #abb2bf;
-  --third-color: ;
+  --third-color: #b9d0ef;
+  --fourth-color: #0b003b;
 }
 
 body {
@@ -13,14 +14,45 @@ p {
   color: var(--second-color);
 }
 
+/*NAVBAR CSS*/
 .brand-name {
   color: var(--main-color) !important;
+  font-family: "Source Code Pro", monospace;
+  font-size: 30px !important;
 }
 
+.name-dot {
+  color: var(--second-color);
+  font-size: 28px;
+}
+
+.link-item {
+  color: var(--second-color) !important;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.5s ease-out !important;
+}
+
+.link-item:hover {
+  color: var(--third-color) !important;
+  font-size: 20px;
+}
+
+.double-slash {
+  color: var(--main-color);
+  font-size: 14px;
+}
+
+.burger-icon {
+  color: var(--second-color);
+  font-size: 28px;
+}
+ 
+/*HERO CSS*/
 .my-name {
   font-family: "Roboto Mono", monospace;
-  color: beige;
+  color: var(--third-color);
 }
+
 
 .second-heading {
   color: var(--main-color);
@@ -30,7 +62,7 @@ p {
 .contact-button {
   font-family: "Roboto Mono", monospace;
   background-color: transparent;
-  color: beige;
+  color: var(--third-color);
   text-decoration: none;
   text-transform: uppercase;
   border: 1px solid var(--main-color);
@@ -48,11 +80,23 @@ p {
   width: 350px;
 }
 
+.gears-icon {
+  color: var(--fourth-color);
+  font-size: 24px;
+}
+
+.projects-title {
+  color: var(--third-color);
+}
+
+.prjcts-hr {
+  color: var(--fourth-color);
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
-  
 }
 
 @media (min-width: 768px) {
