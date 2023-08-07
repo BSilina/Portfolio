@@ -13,6 +13,10 @@ p {
   color: var(--second-color);
 }
 
+.brand-name {
+  color: var(--main-color) !important;
+}
+
 .my-name {
   font-family: "Roboto Mono", monospace;
   color: beige;
