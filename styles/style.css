@@ -10,14 +10,14 @@ body {
 }
 
 p {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   color: var(--second-color);
 }
 
 /*NAVBAR CSS*/
 .brand-name {
   color: var(--main-color) !important;
-  font-family:  'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 30px !important;
 }
 
@@ -28,7 +28,7 @@ p {
 
 .link-item {
   color: var(--second-color) !important;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   transition: all 0.5s ease-out !important;
 }
 
@@ -46,25 +46,25 @@ p {
   color: var(--second-color);
   font-size: 28px;
 }
- 
+
 /*HERO CSS*/
 .my-name {
-  font-family:  'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   color: var(--third-color);
 }
 
-
 .second-heading {
   color: var(--main-color);
-  font-family:  'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .contact-button {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   background-color: transparent;
   color: var(--third-color);
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
   border: 1px solid var(--main-color);
   transition: border-radius 0.5s, background 1s, transform 0.5s;
 }
@@ -73,24 +73,79 @@ p {
   background-color: var(--main-color);
   cursor: pointer;
   transform: scale(1.2);
-  border-radius: 25px;
+  border-radius: 18px;
 }
 
 .main-img {
   width: 350px;
 }
 
+.wh-al {
+  margin-top: 100px;
+}
+
+.while-alive1,
+.while-alive2,
+.while-alive3,
+.while-alive4 {
+  margin-top: 100px !important;
+  opacity: 0.7;
+}
+
+.while-alive1 {
+  text-align: right;
+  margin-left: 150px;
+}
+
+.while-alive4 {
+  text-align: left;
+}
+
+.icons {
+  font-size: 30px;
+}
+
+.fa-utensils {
+  padding-right: 30px;
+}
+
+.fa-repeat {
+  padding-left: 36px;
+}
+
+.some-words {
+  font-size: 22px;
+}
+
+.parentheses {
+  color: var(--main-color);
+}
 .gears-icon {
-  color: var(--fourth-color);
-  font-size: 24px;
+  color: #212427;
+  font-size: 28px;
 }
 
 .projects-title {
   color: var(--third-color);
+  font-family: "JetBrains Mono", monospace;
 }
 
 .prjcts-hr {
   color: var(--fourth-color);
+}
+
+.view-link {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 20px;
+  color: var(--second-color);
+}
+
+.fa-arrow-right-long {
+  color: #212427;
+}
+
+.weather-image {
+  width: 350px;
 }
 
 @media (min-width: 576px) {
