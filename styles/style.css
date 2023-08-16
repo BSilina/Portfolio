@@ -10,14 +10,14 @@ body {
 }
 
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Source Code Pro', monospace;
   color: var(--second-color);
 }
 
 /*NAVBAR CSS*/
 .brand-name {
   color: var(--main-color) !important;
-  font-family: "Source Code Pro", monospace;
+  font-family:  'JetBrains Mono', monospace;
   font-size: 30px !important;
 }
 
@@ -28,7 +28,7 @@ p {
 
 .link-item {
   color: var(--second-color) !important;
-  font-family: "Poppins", sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   transition: all 0.5s ease-out !important;
 }
 
@@ -49,18 +49,18 @@ p {
  
 /*HERO CSS*/
 .my-name {
-  font-family: "Roboto Mono", monospace;
+  font-family:  'JetBrains Mono', monospace;
   color: var(--third-color);
 }
 
 
 .second-heading {
   color: var(--main-color);
-  font-family: "Poppins", sans-serif;
+  font-family:  'JetBrains Mono', monospace;
 }
 
 .contact-button {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'JetBrains Mono', monospace;
   background-color: transparent;
   color: var(--third-color);
   text-decoration: none;
