@@ -3,6 +3,11 @@
   --second-color: #abb2bf;
   --third-color: #b9d0ef;
   --fourth-color: #0b003b;
+  --fifth-color: #2c2f31;
+}
+
+html {
+  width: 100%;
 }
 
 body {
@@ -15,10 +20,15 @@ p {
 }
 
 /*NAVBAR CSS*/
+.navbar {
+  backdrop-filter: blur(14px);
+}
+
 .brand-name {
   color: var(--main-color) !important;
   font-family: "JetBrains Mono", monospace;
   font-size: 30px !important;
+  margin-left: 14px;
 }
 
 .name-dot {
@@ -29,12 +39,13 @@ p {
 .link-item {
   color: var(--second-color) !important;
   font-family: "JetBrains Mono", monospace;
-  transition: all 0.5s ease-out !important;
+  transition: all 0.7s ease-out !important;
 }
 
 .link-item:hover {
   color: var(--third-color) !important;
   font-size: 20px;
+  transform: scale(1);
 }
 
 .double-slash {
@@ -48,6 +59,16 @@ p {
 }
 
 /*HERO CSS*/
+
+div.hero-info {
+  padding-left: 76px;
+  padding-right: 0;
+}
+
+div.hero-photo {
+  padding-right: 0;
+}
+
 .my-name {
   font-family: "JetBrains Mono", monospace;
   color: var(--third-color);
@@ -77,7 +98,8 @@ p {
 }
 
 .main-img {
-  width: 350px;
+  width: 340px;
+  border-radius: 20px;
 }
 
 .wh-al {
@@ -121,31 +143,65 @@ p {
   color: var(--main-color);
 }
 .gears-icon {
-  color: #212427;
+  color: var(--fifth-color);
   font-size: 28px;
+  padding-right: 6px;
 }
 
 .projects-title {
+  padding-left: 66px;
   color: var(--third-color);
   font-family: "JetBrains Mono", monospace;
 }
 
 .prjcts-hr {
-  color: var(--fourth-color);
+  color: var(--fifth-color);
 }
 
 .view-link {
   font-family: "JetBrains Mono", monospace;
-  font-size: 20px;
+  font-size: 18px;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 20px;
   color: var(--second-color);
+  opacity: 0.7;
+  transition: all 0.7s ease-out;
+}
+
+.view-link:hover {
+  font-size: 20px;
+  opacity: 1;
+  transform: scale(1);
+  color: var(--third-color);
+  cursor: pointer;
 }
 
 .fa-arrow-right-long {
-  color: #212427;
+  color: var(--fifth-color);
+}
+
+.project-img {
+  border: 2px solid var(--fifth-color);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 40px;
 }
 
 .weather-image {
-  width: 350px;
+  width: 450px;
+  border-radius: 20px;
+}
+
+.project-info {
+  background-color: var(--fifth-color);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.weather-project-header {
+  color: var(--third-color);
+  padding-top: 20px;
 }
 
 @media (min-width: 576px) {
