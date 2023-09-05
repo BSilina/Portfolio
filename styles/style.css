@@ -19,6 +19,14 @@ p {
   color: var(--second-color);
 }
 
+a {
+  text-decoration: none !important;
+  padding: 8px 16px;
+}
+
+footer {
+  margin-top: 120px;
+}
 /*NAVBAR CSS*/
 .navbar {
   backdrop-filter: blur(14px);
@@ -28,6 +36,7 @@ p {
   color: var(--main-color) !important;
   font-family: "JetBrains Mono", monospace;
   font-size: 30px !important;
+  font-weight: bold;
   margin-left: 14px;
 }
 
@@ -44,7 +53,7 @@ p {
 
 .link-item:hover {
   color: var(--third-color) !important;
-  font-size: 20px;
+  font-size: 18px;
   transform: scale(1);
 }
 
@@ -61,7 +70,7 @@ p {
 /*HERO CSS*/
 
 div.hero-info {
-  padding-left: 76px;
+  padding-left: 190px;
   padding-right: 0;
 }
 
@@ -70,11 +79,31 @@ div.hero-photo {
 }
 
 .my-name {
+  font-size: 50px;
   font-family: "JetBrains Mono", monospace;
   color: var(--third-color);
+  padding-top: 26px;
+  white-space:nowrap;
+  overflow:hidden;
 }
 
+.tiping-animation {
+  animation:blinkCursor 500ms steps(50) infinite normal, typing 5s steps(50) 1s normal both;
+}
+
+@keyframes typing {
+  from{
+    width:0;
+  }
+  to{
+    width:11em;
+  }
+}
+
+
 .second-heading {
+  padding-top: 10px;
+  font-size: 30px;
   color: var(--main-color);
   font-family: "JetBrains Mono", monospace;
 }
@@ -83,14 +112,14 @@ div.hero-photo {
   font-family: "JetBrains Mono", monospace;
   background-color: transparent;
   color: var(--third-color);
-  text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
   border: 1px solid var(--main-color);
   transition: border-radius 0.5s, background 1s, transform 0.5s;
 }
 .contact-button:hover {
-  color: var(--second-color);
+  font-weight: bold;
+  color: black;
   background-color: var(--main-color);
   cursor: pointer;
   transform: scale(1.2);
@@ -103,51 +132,76 @@ div.hero-photo {
 }
 
 .eat-sleep {
-  
+  margin-bottom: 60px;
 }
 
-.icons {
-  font-size: 30px;
+.arrow-down {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  border-radius: 2px;
+}
+.arrow-down span {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-bottom: 4px solid var(--main-color);
+  border-right: 4px solid var(--main-color);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: scroll 4s infinite;
 }
 
-.fa-utensils {
-  padding-right: 30px;
+.arrow-down span:nth-child(2){
+  animation-delay: -.2s;
+  border-radius: 2px;
 }
 
-.fa-repeat {
-  padding-left: 36px;
+
+@keyframes scroll{
+  0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+      opacity: 3;
+      transform: rotate(45deg) translate(-20px, -20px);
+  }
+  100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+  }
 }
 
-.some-words {
-  font-size: 22px;
-}
 
-.parentheses {
+.slash {
   color: var(--main-color);
-}
-.gears-icon {
-  color: var(--fifth-color);
-  font-size: 28px;
-  padding-right: 6px;
+  font-size: 24px;
 }
 
-.projects-title {
+.projects-title, .about-title, .contacts-title {
   padding-left: 66px;
+  padding-right: 46px;
   color: var(--third-color);
   font-family: "JetBrains Mono", monospace;
 }
 
 .prjcts-hr {
   color: var(--fifth-color);
+  margin-top: 26px;
+}
+
+.view {
+  padding-top: 13px;
 }
 
 .view-link {
   font-family: "JetBrains Mono", monospace;
-  font-size: 18px;
-  padding-top: 12px;
-  padding-right: 24px;
-  padding-bottom: 20px;
+  position: relative;
   color: var(--second-color);
+  font-size: 19px;
   opacity: 0.7;
   transition: all 0.7s ease-out;
 }
@@ -160,8 +214,85 @@ div.hero-photo {
   cursor: pointer;
 }
 
-.fa-arrow-right-long {
-  color: var(--fifth-color);
+.view-link:before,
+.view-link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  top: 50%;
+  background: var(--main-color);
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+.view-link:before {
+  width: 36px;
+  right: 96%;
+}
+.view-link:after {
+  width: 0%;
+  left: 96%;
+}
+
+.view-link:hover:before {
+  width: 0%;
+}
+.view-link:hover:after {
+  width: 36px;
+}
+
+.view-link span {
+  position: absolute;
+  display: block;
+  height: 50%;
+  right: -27%;
+  top: 0;
+}
+
+.view-link span:before,
+.view-link span:after {
+  content:'';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  top: 0;
+  right: 0;
+  background: var(--main-color);
+  border-radius: 8px;
+  transform: rotate(45deg);
+  transition: all 0.15s;
+  transition-delay: 0.15s;
+  opacity: 0;
+}
+.view-link span:before {
+  top: 26px;
+  right: 0;
+  transform: rotate(45deg);
+}
+.view-link span:after {
+  top: 10px;
+  right: 0;
+  transform: rotate(-45deg);
+}
+
+.view-link:hover span:before {
+  width: 20px;
+  top: 14px;
+  right: 0px;
+  opacity: 1;
+}
+
+.view-link:hover span:after {
+  width: 20px;
+  top: 28px;
+  right: 0px;
+  opacity: 1;
+}
+
+.w-project, .about-me, .contact-section {
+  margin: 50px;
 }
 
 .project-img {
@@ -182,51 +313,286 @@ div.hero-photo {
   border-bottom-right-radius: 20px;
 }
 
-.weather-project-header {
+.weather-project-header, .about-me-header {
+  font-family: "JetBrains Mono", monospace;
   color: var(--third-color);
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
+.weather-project-info, .about-info {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.weather-live-link, .weather-github-link {
+  font-family: "JetBrains Mono", monospace;
+  background-color: transparent;
+  color: var(--third-color);
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid var(--main-color);
+  transition: border-radius 0.5s, background 1s, transform 0.5s;
+}
+.weather-live-link:hover, .weather-github-link:hover {
+  font-weight: bold;
+  color: var(--fifth-color);
+  background-color: var(--main-color);
+  cursor: pointer;
+  transform: scale(1.2);
+  border-radius: 18px;
+}
+
+.about-me-info {
+  background-color: var(--fifth-color);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  
+}
+
+.read-more-arrow {
+  color: var(--second-color);
+}
+
+
+.about-me-img {
+  border: 2px solid var(--fifth-color);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.get-in-touch-title {
+  color: var(--third-color);
+}
+
+.scroll-up {
+  color: var(--second-color);
+  font-size: 20px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.arrow {
+  position: relative;
+  left: 54%;
+  
+}
+.arrow:before,
+.arrow:after{
+  content: '';
+  position: relative;
+  top: 0;
+  right: -14px;
+  width: 18px;
+  height: 5px;
+  border-radius: 10px;
+  display: block;
+  background: var(--main-color);
+  transform:rotate(45deg);
+  -webkit-transform:rotate(45deg); 
+}
+.arrow:after{
+  top: -4px;
+  right: inherit;
+  left: 4px;
+  transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg); 
+}
+ 
+.animated{
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s both infinite;
+}
+ 
+ 
+@-webkit-keyframes bounce {
+	0% {-webkit-transform: translateY(0); opacity: 0;}
+  60% { opacity: 1;}
+  100% {-webkit-transform: translateY(-60px); opacity: 0}
+}
+ 
+@-moz-keyframes bounce {
+	0% {-webkit-transform: translateY(0); opacity: 0;}
+  60% { opacity: 1;}
+  100% {-webkit-transform: translateY(-60px); opacity: 0}
+}
+ 
+@-o-keyframes bounce {
+	0% {-webkit-transform: translateY(0); opacity: 0;}
+  60% { opacity: 1;}
+  100% {-webkit-transform: translateY(-60px); opacity: 0}
+}
+@keyframes bounce {
+	0% {-webkit-transform: translateY(0); opacity: 0;}
+  60% { opacity: 1;}
+  100% {-webkit-transform: translateY(-60px); opacity: 0}
+}
+
+
+.email-link, .linkedin-link, .github-link {
+  color: var(--second-color);
+  font-size: 30px;
+}
+
+.email-link:hover, .linkedin-link:hover, .github-link:hover {
+  color: var(--main-color);
+}
+
+.heart {
+  color: var(--main-color);
+}
+
+.coder {
+  color: var(--second-color);
+  font-family: "Source Code Pro", monospace;
+
+}
+
+@media (max-width: 2560px) {
+
+  div.hero-info {
+    padding-left: 300px;
   }
-}
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
+  .w-project, .about-me, .contact-section {
+    margin-left: 280px;
+    margin-right: 280px;
   }
+
 }
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 980px;
+@media (max-width: 1440px) {
+  .container-fluid {
+    min-width: 1400px;
   }
-}
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1150px;
+  div.hero-info {
+    padding-left: 140px;
   }
+
+  .projects-title  {
+    padding-left: 40px;
+  }
+
+  .prjcts-hr {
+    width: 500px;
+  }
+
+  .w-project, .about-me {
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+
+  .arrow {
+    position: relative;
+    left: 55%;
+  }
+
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
+
+  .container-fluid {
+    min-width: 1000px;
+  }
+
+  div.hero-info {
+    padding-left: 70px;
+  }
+
+  div.hero-photo {
+    padding-left: 0;
+  }
   .main-img {
     width: 308px;
-    padding-top: 62px;
   }
+
+  .weather-project-info {
+    padding: 3px;
+  }
+
+  .arrow {
+    position: relative;
+    left: 57%;
+  }
+
 }
 
 @media (max-width: 768px) {
-  .main-img {
-    padding-top: 148px;
+
+  .container-fluid {
+    min-width: 750px;
+  }
+
+
+  div.hero-info {
+    padding-left: 40px;
+  }
+
+  .my-name {
+    font-size: 40px;
+  }
+
+  .projects-title  {
+    padding-left: 20px;
+  }
+
+  .prjcts-hr {
+    width: 300px;
+  }
+
+  .w-project, .about-me {
+    margin: 10px;
+  }
+
+  .weather-project-info {
+    font-size: 16px;
+  }
+
+  .arrow {
+    position: relative;
+    left: 60%;
   }
 }
 
+
 @media (max-width: 576px) {
+
+  .container-fluid {
+    min-width: 566px;
+  }
+
+
+  div.hero-info {
+    padding-left: 30px;
+  }
+
+  .my-name {
+    padding-top: 0;
+  }
+
   .main-img {
     width: 300px;
     padding-top: 26px;
   }
+
+  .arrow-down {
+    display: none;
+  }
+
+  .projects-title  {
+    padding-left: 10px;
+  }
+
+  .prjcts-hr {
+    display: none;
+  }
+
+  .scroll-up-text {
+    padding-right: 24px;
+  }
+
+  .arrow {
+    position: relative;
+    left: 61%;
+  }
+
 }
