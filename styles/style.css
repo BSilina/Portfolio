@@ -1,5 +1,6 @@
 :root {
-  --main-color: #7403c8;
+  --main-color: #0f5ab7;
+  --first-color: #fd3f97;
   --second-color: #abb2bf;
   --third-color: #b9d0ef;
   --fourth-color: #0b003b;
@@ -19,6 +20,10 @@ p {
   color: var(--second-color);
 }
 
+hr {
+  max-width: 80%;
+}
+
 a {
   text-decoration: none !important;
   padding: 8px 16px;
@@ -33,7 +38,9 @@ footer {
 }
 
 .brand-name {
-  color: var(--main-color) !important;
+  background-image: linear-gradient(148deg, #0f5ab7 0%, #f49f97 100%);    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "JetBrains Mono", monospace;
   font-size: 30px !important;
   font-weight: bold;
@@ -58,7 +65,9 @@ footer {
 }
 
 .double-slash {
-  color: var(--main-color);
+  background-image: linear-gradient(148deg, #0f5ab7 0%, #f49f97 100%);    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 14px;
 }
 
@@ -72,17 +81,19 @@ footer {
 div.hero-info {
   padding-left: 190px;
   padding-right: 0;
+  margin-bottom: 100px;
 }
 
 div.hero-photo {
   padding-right: 0;
+  margin-bottom: 100px;
 }
 
 .my-name {
   font-size: 50px;
   font-family: "JetBrains Mono", monospace;
   color: var(--third-color);
-  padding-top: 26px;
+  padding-top: 50px;
   white-space:nowrap;
   overflow:hidden;
 }
@@ -102,9 +113,12 @@ div.hero-photo {
 
 
 .second-heading {
-  padding-top: 10px;
+  padding-top: 14px;
+  padding-bottom: 62px;
   font-size: 30px;
-  color: var(--main-color);
+  background-image: linear-gradient(148deg, #0f5ab7 0%, #fd6cc1 100%);    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "JetBrains Mono", monospace;
 }
 
@@ -131,13 +145,15 @@ div.hero-photo {
   border-radius: 20px;
 }
 
-.eat-sleep {
-  margin-bottom: 60px;
+.link-down {
+  display: block;
+  width: 40px;
+  height: 40px;
 }
 
 .arrow-down {
   position: absolute;
-  top: 82%;
+  top: 72%;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
@@ -194,7 +210,7 @@ div.hero-photo {
 }
 
 .view {
-  padding-top: 13px;
+  padding-top: 8px;
 }
 
 .view-link {
@@ -360,6 +376,10 @@ div.hero-photo {
   border-bottom-right-radius: 20px;
 }
 
+.about-image {
+    width: 340px;
+}
+
 .get-in-touch-title {
   color: var(--third-color);
 }
@@ -468,15 +488,8 @@ div.hero-photo {
     padding-left: 140px;
   }
 
-  .projects-title  {
-    padding-left: 40px;
-  }
 
-  .prjcts-hr {
-    width: 500px;
-  }
-
-  .w-project, .about-me {
+  .w-project, .about-me, .contact-section {
     margin-left: 130px;
     margin-right: 130px;
   }
@@ -505,8 +518,50 @@ div.hero-photo {
     width: 308px;
   }
 
-  .weather-project-info {
-    padding: 3px;
+
+  .view-link:before {
+   width: 22px;
+   right: 91%;
+  }
+  .view-link:after {
+   width: 0%;
+   left: 91%;
+  }
+
+  .view-link:hover:after {
+   width: 22px;
+  }
+
+  .view-link span {
+   right: -12%;
+  }
+
+
+  .view-link:hover span:before {
+   width: 16px;
+   top: 15px;
+   right: 2px;
+   opacity: 1;
+  }
+
+  .view-link:hover span:after {
+   width: 16px;
+   top: 26px;
+   right: 1px;
+   opacity: 1;
+  }
+
+  .w-project, .about-me, .contact-section {
+    margin: 70px;
+  }
+
+  .weather-project-info, .about-info {
+    padding: 14px;
+    font-size: 18px;
+  }
+
+  .about-image {
+   margin-top: 30px;
   }
 
   .arrow {
@@ -531,21 +586,76 @@ div.hero-photo {
     font-size: 40px;
   }
 
-  .projects-title  {
-    padding-left: 20px;
+  .projects-title, .about-title, .contacts-title  {
+    padding-left: 26px;
+    padding-right: 20px;
   }
 
   .prjcts-hr {
-    width: 300px;
+    width: 350px;
+  }
+  
+
+  .view {
+    padding-top: 6px;
   }
 
-  .w-project, .about-me {
-    margin: 10px;
-  }
-
-  .weather-project-info {
+  .view-link {
     font-size: 16px;
   }
+
+  .view-link:hover {
+    font-size: 17px;
+  }
+
+  .view-link:before {
+    width: 18px;
+    right: 90%;
+   }
+   .view-link:after {
+    width: 0%;
+    left: 90%;
+   }
+ 
+   .view-link:hover:after {
+    width: 18px;
+   }
+ 
+   .view-link span {
+    right: -10%;
+   }
+ 
+ 
+   .view-link:hover span:before {
+    width: 13px;
+    top: 14px;
+    right: 2px;
+    opacity: 1;
+   }
+ 
+   .view-link:hover span:after {
+    width: 13px;
+    top: 23px;
+    right: 1px;
+    opacity: 1;
+   }
+
+  .project-img {
+    padding-top: 80px;
+  }
+
+  .w-project, .about-me, .contact-section {
+    margin: 40px;
+  }
+
+  .weather-project-info, .about-info {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .about-image {
+    margin-top: 68px;
+   }
 
   .arrow {
     position: relative;
@@ -560,10 +670,14 @@ div.hero-photo {
     min-width: 566px;
   }
 
-
   div.hero-info {
     padding-left: 30px;
+    margin-bottom: 10px;
   }
+
+  div.hero-photo {
+    margin-bottom: 10px;
+}
 
   .my-name {
     padding-top: 0;
@@ -574,17 +688,56 @@ div.hero-photo {
     padding-top: 26px;
   }
 
+  .w-project {
+    margin-top: 0;
+   }
+  
+  .about-me, .contact-section {
+    margin: 30px;
+  }
+
   .arrow-down {
     display: none;
   }
 
-  .projects-title  {
-    padding-left: 10px;
+  .projects-title, .about-title, .contacts-title  {
+    padding-left: 26px;
+  }
+
+  .view {
+    position: relative;
+    bottom: 34px;
+    left: 164px;
   }
 
   .prjcts-hr {
     display: none;
   }
+
+  .project-img {
+    padding-top: 40px;
+    border-top-right-radius: 20px ;
+    border-bottom-left-radius: 0;
+ }
+
+ .project-info {
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 20px;
+ }
+
+ .about-me-info {
+  border-top-right-radius: 20px ;
+  border-bottom-left-radius: 0;
+ } 
+ 
+ .about-me-img {
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 20px;
+ }
+
+ .about-image {
+  margin: 0;
+ }
 
   .scroll-up-text {
     padding-right: 24px;
@@ -595,4 +748,87 @@ div.hero-photo {
     left: 61%;
   }
 
+}
+
+@media (max-width: 320px) {
+
+  a {
+    font-size: 14px;
+  }
+
+  .container-fluid {
+    min-width: 320px;
+  }
+
+  .w-project  {
+    margin-top: 0 !important;
+  }
+
+  .w-project, .about-me, .contact-section {
+    margin: 10px;
+  }
+
+  .brand-name {
+    margin: 0;
+  }
+
+  .my-name {
+    font-size: 28px;
+  }
+
+  .second-heading {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .main-img {
+    width: 200px;
+  }
+
+  .slash {
+    font-size: 19px;
+  }
+
+  .projects-title, .about-title, .contacts-title  {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  
+  .view {
+    position: relative;
+    bottom: 30px;
+    left: 84px;
+  }
+
+  .view-link {
+    font-size: 14px;
+  }
+
+  .view-link:hover {
+    font-size: 15px;
+  }
+
+  
+  .view-link:hover span:before {
+    width: 12px;
+    top: 14px;
+    right: 0px;
+    opacity: 1;
+   }
+ 
+   .view-link:hover span:after {
+    width: 12px;
+    top: 22px;
+    right: 0px;
+    opacity: 1;
+   }
+
+   .arrow {
+    position: relative;
+    left: 70%;
+   }
+
+   footer {
+    margin-top: 50px;
+   }
 }

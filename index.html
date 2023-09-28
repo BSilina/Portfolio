@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Vasylyna Btiuk - Front-End Developer</title>
+    <meta
+    name="description"
+    content="Vasylyna Batiuk Freelance Front-end Web Developer based in Yorkton, Canada"
+  />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/style.css" />
@@ -21,9 +26,9 @@
       src="https://kit.fontawesome.com/b74a4a8ae3.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
   </head>
   <body>
+     <!-- Navigation Bar -->
     <nav class="navbar sticky-md-top navbar-expand-lg bg-transparent">
       <div class="container-fluid">
         <a class="navbar-brand brand-name" href="#"
@@ -46,22 +51,22 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active link-item" aria-current="page" href="#"
+              <a class="nav-link active link-item" aria-current="page" href="#"  title="Homepage"
                 ><span class="double-slash">//</span> home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link link-item" href="#"
+              <a class="nav-link link-item" href="#"  title="My projects"
                 ><span class="double-slash">//</span> works</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link link-item" href="#"
+              <a class="nav-link link-item" href="#"  title="About me page"
                 ><span class="double-slash">//</span> about-me</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link link-item" href="#"
+              <a class="nav-link link-item" href="#"  title="Contact me page"
                 ><span class="double-slash">//</span> contacts</a
               >
             </li>
@@ -70,41 +75,43 @@
       </div>
     </nav>
     <div class="container-fluid pt-5">
+       <!-- Hero Section-->
       <div class="row">
         <div class="col-sm-6 hero-info">
           <h1 class="my-name tiping-animation">Vasylyna Batiuk</h1>
-          <h2 class="pb-5 second-heading">
+          <h2 class="second-heading">
             Front-End Developer
           </h2>
-          <p class="pb-4 pt-2">
+          <p class="pb-5 pt-2">
             She crafts responsive websites, where technology meet creativity
           </p>
-          <a class="px-3 py-2 contact-button">Contact me</a>
+          <a class="px-3 py-2 contact-button" href="#"  title="Contact me button">Contact me</a>
         </div>
+         <!-- Hero-photo -->
         <div class="col-sm-6 text-center hero-photo">
           <img
             class="img-fluid main-img"
-            src="/images/b139e1e62bd5fe63567cb74e4459f339.jpg"
+            src="/images/Avatar_watercolor.jpg"
             alt="Avatar picture"
           />
         </div>
       </div>
-      <div class="text-center mt-5">
-        <img class="img-fluid eat-sleep" src="images/eat-sleep-code-repeat.png" alt="Eat, sleep, code, repeat!">
-      </div>
       <div class="arrow-down">
+        <a href="#about-me-section"  title="Scroll-down" class="link-down">
         <span></span>
         <span></span>
+      </a>
       </div>
+      <!-- Projects section -->
       <div class="row mt-5">
-        <div class="col-sm-10 pe-0">
+        <div class="col pe-0 projects-section">
           <h3 class="float-start m-0 projects-title">
             <span class="slash">//</span></i>projects
           </h3>
           <hr class="border-3 opacity-75 prjcts-hr" />
         </div>
-        <div class="col-sm-2 text-center view">
-          <a class="view-link" href="#">View all<span></span></a>
+        <div class="col-sm-2 ps-0 pe-0 text-center view">
+          <a class="view-link" href="#" title="link to projects">View all<span></span></a>
         </div>
       </div>
       <div class="w-project">
@@ -126,11 +133,11 @@
             OpenWeatherMap API integration for live weather information. Hosted on Netlify.
           </p>
           <div class="row mb-3">
-            <div class="col-sm-6 text-center">
+            <div class="col text-center mb-3 weather-live">
               <a class="weather-live-link" href="https://cosmic-weather.netlify.app/" target="_blank"
               title="View Vasylyna Batiuk's simple weather application">Live</a>
             </div>
-            <div class="col-sm-6 text-center">
+            <div class="col text-center mb-3 weather-github">
               <a class="weather-github-link" href="https://github.com/BSilina/my-first-app" target="_blank" title="View Vasylyna Batiuk's simple weather application on GitHub">GitHub</a>
             </div>
           </div>
@@ -145,7 +152,7 @@
       <hr class="border-3 opacity-75 prjcts-hr" />
      </div>
     </div>
-     <div class="about-me">
+     <div class="about-me" id="about-me-section">
       <div class="row">
         <div class="col-sm-6 about-me-info">
           <h3 class="about-me-header text-center">
@@ -156,15 +163,15 @@
 
 Below are some of the projects I worked on during the SheCodes Workshops. Click on the "READ MORE" button to read all about my newfound passion for coding and my acquired skills.
           </p>
-            <div class="col-sm-6 pb-4 text-center">
+            <div class="col-sm-6 pb-4 mb-2 text-center">
               <a class="weather-live-link" href="">Read more <i class="fa-solid fa-arrow-right-long read-more-arrow"></i
                 ></a>
             </div>
         </div>
         <div class="col-sm-6 text-center about-me-img">
           <img
-            class="img-fluid weather-image"
-            src="/images/b139e1e62bd5fe63567cb74e4459f339.jpg"
+            class="img-fluid about-image"
+            src="/images/Avatar_watercolor 2.jpg"
             alt="Here need to be my photo"
           />
         </div>
