@@ -394,9 +394,7 @@ div.hero-photo {
 }
 
 .arrow {
-  position: relative;
-  left: 54%;
-  
+  padding-left: 1020px;
 }
 .arrow:before,
 .arrow:after{
@@ -489,6 +487,7 @@ div.hero-photo {
     margin-right: 280px;
   }
 
+
 }
 
 @media (max-width: 1440px) {
@@ -507,9 +506,8 @@ div.hero-photo {
   }
 
   .arrow {
-    position: relative;
-    left: 55%;
-  }
+    padding-left: 780px;
+   }
 
 }
 
@@ -577,9 +575,8 @@ div.hero-photo {
   }
 
   .arrow {
-    position: relative;
-    left: 57%;
-  }
+    padding-left: 570px;
+   }
 
 }
 
@@ -669,10 +666,10 @@ div.hero-photo {
     margin-top: 68px;
    }
 
-  .arrow {
-    position: relative;
-    left: 60%;
-  }
+   .arrow {
+    padding-left: 448px;
+   }
+
 }
 
 
@@ -757,9 +754,8 @@ div.hero-photo {
   }
 
   .arrow {
-    position: relative;
-    left: 61%;
-  }
+    padding-left: 336px;
+   }
 
 }
 
@@ -768,6 +764,10 @@ div.hero-photo {
   .container-fluid {
     min-width: 420px;
   }
+
+  .arrow {
+    padding-left: 260px;
+   }
 }
 
 @media (max-width: 375px) {
@@ -775,6 +775,10 @@ div.hero-photo {
   .container-fluid {
     min-width: 370px;
   }
+
+  .arrow {
+    padding-left: 240px;
+   }
 }
 
 @media (max-width: 320px) {
@@ -785,10 +789,6 @@ div.hero-photo {
 
   .container-fluid {
     min-width: 320px;
-  }
-
-  .w-project  {
-    margin-top: 0 !important;
   }
 
   .w-project, .about-me, .contact-section {
@@ -852,8 +852,7 @@ div.hero-photo {
    }
 
    .arrow {
-    position: relative;
-    left: 70%;
+    padding-left: 210px;
    }
 
    footer {
