@@ -762,6 +762,20 @@ div.hero-photo {
 
 }
 
+@media (max-width: 425px) {
+
+  .container-fluid {
+    min-width: 420px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .container-fluid {
+    min-width: 370px;
+  }
+}
+
 @media (max-width: 320px) {
 
   a {
