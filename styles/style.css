@@ -219,13 +219,13 @@ div.hero-photo {
   font-family: "JetBrains Mono", monospace;
   position: relative;
   color: var(--second-color);
-  font-size: 19px;
+  font-size: 18px;
   opacity: 0.7;
   transition: all 0.7s ease-out;
 }
 
 .view-link:hover {
-  font-size: 20px;
+  font-size: 19px;
   opacity: 1;
   transform: scale(1);
   color: var(--third-color);
@@ -244,27 +244,28 @@ div.hero-photo {
   transition: all 0.5s;
 }
 
+
 .view-link:before {
-  width: 36px;
-  right: 96%;
+  width: 20px;
+  right: 89%;
 }
 .view-link:after {
   width: 0%;
-  left: 96%;
+  left: 89%;
 }
 
 .view-link:hover:before {
   width: 0%;
 }
 .view-link:hover:after {
-  width: 36px;
+  width: 20px;
 }
 
 .view-link span {
   position: absolute;
   display: block;
   height: 50%;
-  right: -27%;
+  right: -12%;
   top: 0;
 }
 
@@ -284,7 +285,7 @@ div.hero-photo {
   opacity: 0;
 }
 .view-link span:before {
-  top: 26px;
+  top: 16px;
   right: 0;
   transform: rotate(45deg);
 }
@@ -295,16 +296,16 @@ div.hero-photo {
 }
 
 .view-link:hover span:before {
-  width: 20px;
-  top: 14px;
-  right: 0px;
+  width: 12px;
+  top: 18px;
+  right: 6px;
   opacity: 1;
 }
 
 .view-link:hover span:after {
-  width: 20px;
-  top: 28px;
-  right: 0px;
+  width: 12px;
+  top: 25px;
+  right: 6px;
   opacity: 1;
 }
 
@@ -487,7 +488,6 @@ div.hero-photo {
     margin-right: 280px;
   }
 
-
 }
 
 @media (max-width: 1440px) {
@@ -528,36 +528,17 @@ div.hero-photo {
     width: 308px;
   }
 
-
-  .view-link:before {
-   width: 22px;
-   right: 91%;
-  }
-  .view-link:after {
-   width: 0%;
-   left: 91%;
-  }
-
-  .view-link:hover:after {
-   width: 22px;
-  }
-
-  .view-link span {
-   right: -12%;
-  }
-
-
   .view-link:hover span:before {
-   width: 16px;
-   top: 15px;
-   right: 2px;
+   width: 12px;
+   top: 16px;
+   right: 6px;
    opacity: 1;
   }
 
   .view-link:hover span:after {
-   width: 16px;
-   top: 26px;
-   right: 1px;
+   width: 12px;
+   top: 24px;
+   right: 6px;
    opacity: 1;
   }
 
@@ -604,50 +585,6 @@ div.hero-photo {
     width: 350px;
   }
   
-
-  .view {
-    padding-top: 6px;
-  }
-
-  .view-link {
-    font-size: 16px;
-  }
-
-  .view-link:hover {
-    font-size: 17px;
-  }
-
-  .view-link:before {
-    width: 18px;
-    right: 90%;
-   }
-   .view-link:after {
-    width: 0%;
-    left: 90%;
-   }
- 
-   .view-link:hover:after {
-    width: 18px;
-   }
- 
-   .view-link span {
-    right: -10%;
-   }
- 
- 
-   .view-link:hover span:before {
-    width: 13px;
-    top: 14px;
-    right: 2px;
-    opacity: 1;
-   }
- 
-   .view-link:hover span:after {
-    width: 13px;
-    top: 23px;
-    right: 1px;
-    opacity: 1;
-   }
 
   .project-img {
     padding-top: 80px;
@@ -696,6 +633,20 @@ div.hero-photo {
     width: 300px;
     padding-top: 26px;
   }
+
+  .view-link:hover span:before {
+    width: 12px;
+    top: 17px;
+    right: 6px;
+    opacity: 1;
+   }
+ 
+   .view-link:hover span:after {
+    width: 12px;
+    top: 25px;
+    right: 6px;
+    opacity: 1;
+   }
 
   .w-project {
     margin-top: 0;
@@ -819,38 +770,8 @@ div.hero-photo {
   .projects-title, .about-title, .contacts-title  {
     padding-left: 10px;
     font-size: 20px;
-  }
+  } 
   
-  .view {
-    max-width: 40% !important;
-    position: relative;
-    bottom: 6px;
-    right: 14px;
-  }
-
-  .view-link {
-    font-size: 14px;
-  }
-
-  .view-link:hover {
-    font-size: 15px;
-  }
-
-  
-  .view-link:hover span:before {
-    width: 12px;
-    top: 14px;
-    right: 0px;
-    opacity: 1;
-   }
- 
-   .view-link:hover span:after {
-    width: 12px;
-    top: 22px;
-    right: 0px;
-    opacity: 1;
-   }
-
    .arrow {
     padding-left: 210px;
    }
