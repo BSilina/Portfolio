@@ -529,17 +529,13 @@ div.hero-photo {
   }
 
   .view-link:hover span:before {
-   width: 12px;
    top: 16px;
    right: 6px;
-   opacity: 1;
   }
 
   .view-link:hover span:after {
-   width: 12px;
    top: 24px;
    right: 6px;
-   opacity: 1;
   }
 
   .w-project, .about-me, .contact-section {
@@ -635,17 +631,13 @@ div.hero-photo {
   }
 
   .view-link:hover span:before {
-    width: 12px;
     top: 17px;
-    right: 6px;
-    opacity: 1;
+    right: 6px; 
    }
  
    .view-link:hover span:after {
-    width: 12px;
     top: 25px;
     right: 6px;
-    opacity: 1;
    }
 
   .w-project {
@@ -719,6 +711,10 @@ div.hero-photo {
   .arrow {
     padding-left: 260px;
    }
+
+   .tiping-animation {
+    max-width: 420px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -730,6 +726,30 @@ div.hero-photo {
   .arrow {
     padding-left: 240px;
    }
+
+   .my-name {
+    font-size: 36px;
+  }
+
+  .view-link:hover span:before {
+    top: 17px;
+    right: 6px; 
+   }
+ 
+   .view-link:hover span:after {
+    top: 24px;
+    right: 6px;
+   }
+
+
+   .tiping-animation {
+    max-width: 370px;
+  }
+
+  .second-heading {
+    font-size: 28px;
+    padding: 20px 0;
+  }
 }
 
 @media (max-width: 320px) {
@@ -754,6 +774,10 @@ div.hero-photo {
     font-size: 28px;
   }
 
+  .tiping-animation {
+    max-width: 300px;
+  }
+
   .second-heading {
     font-size: 20px;
     padding: 10px 0;
@@ -765,6 +789,10 @@ div.hero-photo {
 
   .slash {
     font-size: 19px;
+  }
+
+  .projects-title {
+    padding-top: 5px;
   }
 
   .projects-title, .about-title, .contacts-title  {
