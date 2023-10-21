@@ -655,6 +655,10 @@ div.hero-photo {
 
 @media (max-width: 576px) {
 
+  .brand-name {
+    margin-left: 0;
+  }
+
   .container-fluid {
     min-width: 574px;
   }
@@ -724,7 +728,9 @@ div.hero-photo {
  .about-image {
   margin: 0;
  }
-
+ .scroll-up-button {
+  margin-bottom: 40px;
+ }
 
 }
 
@@ -735,7 +741,7 @@ div.hero-photo {
   }
 
    .tiping-animation {
-    max-width: 415px;
+    max-width: 370px;
   }
 
   .view-link {
@@ -777,7 +783,7 @@ div.hero-photo {
   }
 
    .tiping-animation {
-    max-width: 370px;
+    max-width: 332px;
   }
 
   .second-heading {
@@ -809,7 +815,7 @@ div.hero-photo {
   }
 
   .tiping-animation {
-    max-width: 300px;
+    max-width: 280px;
   }
 
   .second-heading {
