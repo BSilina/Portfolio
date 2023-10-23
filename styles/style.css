@@ -145,7 +145,7 @@ div.hero-photo {
 }
 
 .main-img {
-  width: 340px;
+  width: 440px;
   border-radius: 20px;
 }
 
@@ -520,6 +520,57 @@ div.hero-photo {
   -webkit-text-fill-color: transparent;
 }
 
+/* ABOUT-ME PAGE */
+
+.me-title {
+  color: var(--third-color);
+  font-family: "JetBrains Mono", monospace;
+  padding: 60px 0 20px 40px;
+}
+
+.slash-2 {
+  background-image: linear-gradient(148deg, #0f5ab7 0%, #f49f97 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.who {
+  position: relative;
+  left: 6%;
+  max-width: 50%;
+}
+
+.vertical {
+  max-width: 20px;
+  border-left: 2px solid var(--fifth-color);
+  height: 90px;
+  position: relative;
+  left: 10%;
+}
+
+.me-content {
+   background-color: var(--fifth-color);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.about-me-pic {
+  width: 430px;
+}
+
+
+.me-pic {
+  position: relative;
+  border-bottom: 2px solid var(--fifth-color);
+}
+
+.me-pic img {
+  position: absolute;
+  bottom: 0;
+}
+
+
 @media (max-width: 2560px) {
 
   div.hero-info {
@@ -530,6 +581,11 @@ div.hero-photo {
     margin-left: 280px;
     margin-right: 280px;
   }
+
+  .about-me-pic {
+    max-width: 90%;
+    margin-left: 90px;
+}
 
 }
 
@@ -563,7 +619,8 @@ div.hero-photo {
     padding-left: 0;
   }
   .main-img {
-    width: 308px;
+    width: 380px;
+    padding-top: 38px;
   }
 
   .view {
@@ -598,6 +655,10 @@ div.hero-photo {
    margin-top: 30px;
   }
 
+   .about-me-pic {
+   margin-left: 30px;
+}
+
 }
 
 @media (max-width: 768px) {
@@ -613,6 +674,11 @@ div.hero-photo {
 
   .my-name {
     font-size: 40px;
+  }
+
+  .main-img {
+    width: 340px;
+    padding-top: 80px;
   }
 
   .view {
@@ -646,6 +712,14 @@ div.hero-photo {
     margin-top: 68px;
    }
 
+   .vertical {
+    height: 30px;
+   }
+
+   .about-me-pic {
+    margin-left: 0;
+   }
+
 }
 
 
@@ -660,20 +734,24 @@ div.hero-photo {
   }
 
   div.hero-info {
-    padding-left: 30px;
+    text-align: center;
+    padding: 10px;
     margin-bottom: 10px;
   }
 
   div.hero-photo {
     margin-bottom: 10px;
-}
+  }
 
   .my-name {
     padding-top: 0;
   }
 
+  .tiping-animation {
+    width: 554px !important;
+  }
+
   .main-img {
-    width: 300px;
     padding-top: 26px;
   }
   #mouse-scroll {
@@ -728,6 +806,15 @@ div.hero-photo {
   margin-bottom: 40px;
  }
 
+ .about-me-pic {
+  position: static !important;
+  margin-left: 30px;
+ }
+
+ .me-content {
+  background-color: transparent;
+ }
+
 }
 
 @media (max-width: 425px) {
@@ -737,7 +824,7 @@ div.hero-photo {
   }
 
    .tiping-animation {
-    max-width: 370px;
+    max-width: 404px;
   }
 
   .view-link {
@@ -745,25 +832,29 @@ div.hero-photo {
   }
 
   
-.view-link:before {
-  width: 14px;
-  right: 89%;
-}
+  .view-link:before {
+    width: 14px;
+    right: 89%;
+  }
 
-.view-link:hover:after {
-  width: 14px;
-}
+  .view-link:hover:after {
+    width: 14px;
+  }
 
   .view-link:hover span:before {
     width: 8px;
     top: 16px;
     right: 6px;
-   }
+  }
  
-   .view-link:hover span:after {
+  .view-link:hover span:after {
     width: 8px;
     top: 20px;
     right: 6px;
+   }
+
+   .about-me-pic {
+    margin-left: 16px;
    }
 
 }
@@ -779,7 +870,7 @@ div.hero-photo {
   }
 
    .tiping-animation {
-    max-width: 332px;
+    max-width: 350px;
   }
 
   .second-heading {
@@ -811,16 +902,12 @@ div.hero-photo {
   }
 
   .tiping-animation {
-    max-width: 280px;
+    max-width: 304px;
   }
 
   .second-heading {
     font-size: 20px;
     padding: 10px 0;
-  }
-
-  .main-img {
-    width: 200px;
   }
 
   .slash {
