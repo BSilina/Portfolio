@@ -418,6 +418,8 @@ div.hero-photo {
   border-radius: 18px;
 }
 
+/* About me section*/
+
 .about-me-info, .coming-soon-info {
   background-color: var(--fifth-color);
   border-top-left-radius: 20px;
@@ -495,6 +497,31 @@ div.hero-photo {
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+.media-links {
+ position: fixed;
+  bottom: 0px;
+  left: 28px;
+  right: auto;
+}
+
+.media-list {
+   display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.media-list::after {
+ content: "";
+  display: block;
+  width: 1px;
+  height: 40px;
+  margin: 0px auto;
+  background-color: var(--fifth-color);
+}
 /* ABOUT-ME PAGE */
 
 .page-title {
