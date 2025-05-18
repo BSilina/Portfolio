@@ -120,6 +120,7 @@ div.hero-photo {
 .text-gradient {
   background-image: linear-gradient(148deg, #0f5ab7 0%, #f49f97 100%); 
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -188,17 +189,21 @@ div.hero-photo {
 #mouse-croll .down-arrow-1 {
    -webkit-animation-delay: .1s; 
    -moz-animation-delay: .1s;
+   animation-delay: .1s;
    -webkit-animation-direction: alternate;
+   animation-direction: alternate;
 }
 #mouse-scroll .down-arrow-2 {
   -webkit-animation-delay: .2s; 
   -moz-animation-delay: .2s;
-  -webkit-animation-direction: alternate;
+  animation-delay: .2s;
+  animation-direction: alternate;
 }
 #mouse-scroll .down-arrow-3 {
    -webkit-animation-delay: .3s;
+   animation-delay: .3s;
    -moz-animation-dekay: .3s;
-   -webkit-animation-direction: alternate;
+   animation-direction: alternate;
 }
 #mouse-scroll .mouse-in {
   height: 5px;
@@ -210,6 +215,7 @@ div.hero-photo {
 }
 #mouse-scroll .mouse-in {
  -webkit-animation: animated-mouse 1.2s ease infinite;
+ animation: animated-mouse 1.2s ease infinite;
 }
 
 @-webkit-keyframes animated-mouse {
@@ -223,6 +229,17 @@ div.hero-photo {
      opacity: 0;
     -webkit-transform: translateY(6px);
     -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
     transform: translateY(6px);
   }
 }
@@ -473,14 +490,14 @@ div.hero-photo {
 }
 .to-top:hover{
   background-image: linear-gradient(148deg, #0f5ab7 0%, #f49f97 100%); 
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   border-color: #f1a098be;
 }
 .to-top:hover:before{
 	transform: rotate(360deg);
   background-image: linear-gradient(148deg, #0f5ab7 0%, #f49f97 100%); 
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -497,7 +514,7 @@ div.hero-photo {
 
 .email-link:hover, .linkedin-link:hover, .github-link:hover {
   background-image: linear-gradient(148deg, #0f5ab7 0%, #f49f97 100%); 
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -662,6 +679,7 @@ div.hero-photo {
     margin: 0;
     background-image: linear-gradient(148deg, #0f5ab7 0%, #f49f97 100%); 
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
