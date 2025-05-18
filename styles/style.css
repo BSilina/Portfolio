@@ -123,6 +123,10 @@ div.hero-photo {
   -webkit-text-fill-color: transparent;
 }
 
+.location {
+  font-size: 24px;
+}
+
 .contact-button {
   font-family: "JetBrains Mono", monospace;
   background-color: transparent;
@@ -178,7 +182,8 @@ div.hero-photo {
 }
 #mouse-scroll .down-arrow-1, #mouse-scroll .down-arrow-2, #mouse-scroll .down-arrow-3 {
   -webkit-animation: mouse-scroll 1s infinite; 
-    -moz-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
 }
 #mouse-croll .down-arrow-1 {
    -webkit-animation-delay: .1s; 
