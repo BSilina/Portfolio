@@ -2,7 +2,7 @@
   --main-color: #0f5ab7;
   --first-color: #fd3f97;
   --second-color: #abb2bf;
-  --third-color: #b9d0ef;
+  --third-color: #9bb1cc;
   --fourth-color: #0b003b;
   --fifth-color: #2c2f31;
 }
@@ -88,11 +88,17 @@ div.hero-photo {
   margin-bottom: 100px;
 }
 
+.hey {
+  font-size: 30px;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--third-color);
+}
+
 .my-name {
   font-size: 50px;
   font-family: "JetBrains Mono", monospace;
   color: var(--third-color);
-  padding-top: 50px;
+  padding-top: 30px;
   white-space:nowrap;
   overflow:hidden;
 }
